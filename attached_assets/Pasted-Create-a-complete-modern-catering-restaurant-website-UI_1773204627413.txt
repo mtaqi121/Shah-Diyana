@@ -1,0 +1,201 @@
+Create a complete modern catering restaurant website UI using only HTML, CSS and vanilla JavaScript.
+
+Website Name:
+SHAH – DIYANA CATERING SERVICES & PAKWAN CENTER
+
+Design Style:
+Premium, elegant, dark theme with gold/orange accent colors.
+The website should look like a high-end restaurant landing page similar to modern catering websites on Behance.
+
+Use:
+- Google Fonts (Playfair Display for headings, Poppins for text)
+- CSS Grid and Flexbox
+- Smooth animations and hover effects
+- Fully responsive design
+
+Project Structure:
+index.html
+style.css
+script.js
+
+----------------------------------------------------
+
+1. HERO SECTION
+
+Create a full screen hero section with a blurred food background image.
+
+Content:
+Title:
+SHAH – DIYANA
+
+Subtitle:
+Catering and Pakwan Center
+
+Button:
+"View Menu"
+
+Add:
+• Smooth scroll arrow
+• Transparent navbar
+• Navbar links:
+Home | About Us | Menu | Booking | Contact
+
+Navbar becomes solid on scroll.
+
+----------------------------------------------------
+
+2. ABOUT & LOCATION SECTION
+
+Create two side-by-side cards with background images and overlay text.
+
+CARD 1: About Us
+
+Title:
+About SHAH – DIYANA
+
+Text:
+SHAH – DIYANA CATERING SERVICES & PAKWAN CENTER  
+“Where Taste Meets Beautiful Celebrations ✨🍴🎉”
+
+SHAH – DIYANA CATERING SERVICES & Pakwan Center provides delicious, fresh, and hygienic food for all types of events and daily orders.
+
+We are committed to quality taste, beautiful presentation, and professional service to make every occasion special.
+
+Our Services:
+• Wedding Events
+• Valima Functions
+• Mehndi & Mayo
+• Farmhouse Events
+• Corporate Events
+• Private Parties & Family Functions
+• Birthday & Anniversary Celebrations
+• Aqeeqa & Religious Events
+• School & College Events
+• Buffet, Live BBQ & Outdoor Catering
+• Hi-Tea & Dinner Arrangements
+• Pakwan Orders for Home & Events
+
+We offer customized menus according to your taste and budget with guaranteed quality and timely service.
+
+Contact:
+0304 3635628
+
+CARD 2: Our Location
+
+Show a restaurant interior background image with overlay text:
+"Our Location – Karachi"
+
+Add hover zoom animation on cards.
+
+----------------------------------------------------
+
+3. MENU SECTION
+
+
+
+Create a 3-column responsive grid menu layout.
+
+Menu items based on provided menu image:
+
+Starter:
+Chicken Wontons
+
+Main Course:
+Chicken Masala Biryani
+Chicken Koyla Karahi
+Milky Naan
+Taftan
+Russian Salad Bars
+Raita
+
+Dessert:
+Cream Cocktail
+Sweet Pan Shots (FREE)
+
+Pricing Box:
+
+Menus Starting From
+
+For 200 Persons – Rs 85,000  
+For 400 Persons – Rs 165,000  
+For 600 Persons – Rs 240,000  
+For 800 Persons – Rs 312,000
+
+Add food images with hover zoom effect.
+
+----------------------------------------------------
+
+4. BOOKING SECTION
+
+Create a dark overlay reservation section with background image.
+
+Form fields:
+
+Name
+Email
+Phone
+Seats
+Date
+Time
+Special Request (textarea)
+
+Inputs should have:
+Orange border
+Glow on focus
+
+Button:
+"Make Reservation"
+
+Add simple form validation using JavaScript.
+
+----------------------------------------------------
+
+5. SOCIAL SECTION
+
+Title:
+Connect With Us
+
+Add icons for:
+Facebook:https://www.facebook.com/share/18TeVSMaA7/
+Instagram:https://www.instagram.com/shahdiyanacateringservices?igsh=ODd5Z3B3aDhkeDVr
+
+tiktok 
+tiktok.com/@shahdiyana_c1
+
+
+
+
+----------------------------------------------------
+
+6. FOOTER
+
+Add footer with:
+
+Restaurant Name
+Phone: 0304 3635628
+Email: shahdiyanacateringservices@gmail.com
+Address:
+Shop No 06, Gulshan-e-Shamim,
+Yaseenabad, FB Area, Karachi
+
+Copyright text.
+
+----------------------------------------------------
+
+7. JAVASCRIPT FEATURES
+
+• Smooth scrolling navigation
+• Navbar background change on scroll
+• Scroll reveal animations
+• Form validation
+• Menu card hover animation
+
+----------------------------------------------------
+
+The final result should look like a premium catering landing page with smooth animations, elegant typography, and a modern UI.
+
+
+additional 
+
+Slogan: Where Taste Meets Beautiful Celebrations!
+Owner name  Mr Shahbaz Alamgir
