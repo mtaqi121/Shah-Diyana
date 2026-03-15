@@ -1,13 +1,12 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X, ChefHat } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const NAV_LINKS = [
   { label: "Home", href: "#home" },
-  { label: "About Us", href: "#about" },
+  { label: "About", href: "#about" },
   { label: "Menu", href: "#menu" },
-  { label: "Booking", href: "#booking" },
   { label: "Contact", href: "#footer" },
 ];
 
@@ -34,9 +33,8 @@ export function Navbar() {
     >
       <div className="container mx-auto px-6 max-w-7xl flex items-center justify-between">
         <a href="#home" className="flex items-center gap-2 group">
-          <ChefHat className="w-8 h-8 text-primary transition-transform group-hover:scale-110 group-hover:-rotate-12" />
           <span className="font-display font-bold text-2xl tracking-wider text-white">
-            SHAH<span className="text-primary">DIYANA</span>
+            SHAH - <span className="text-primary">DIYANA</span>
           </span>
         </a>
 
@@ -51,11 +49,12 @@ export function Navbar() {
               {link.label}
             </a>
           ))}
-          <Button 
+
+          <Button
             asChild
             className="rounded-none bg-primary text-primary-foreground hover:bg-primary/90 font-semibold px-6 py-5 uppercase tracking-widest text-xs"
           >
-            <a href="#booking">Book Table</a>
+            <a href="#booking">Booking</a>
           </Button>
         </nav>
 

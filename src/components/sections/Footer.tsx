@@ -11,20 +11,21 @@ export function Footer() {
           <div className="lg:col-span-2 space-y-6">
             <a href="#home" className="inline-block">
               <span className="font-display font-bold text-3xl tracking-wider text-white">
-                SHAH<span className="text-primary">DIYANA</span>
+                SHAH - <span className="text-primary">DIYANA</span>
               </span>
             </a>
+            <p className="text-primary/80 font-semibold">Where Taste Meets Beautiful Celebrations!</p>
             <p className="text-white/60 font-light max-w-md leading-relaxed">
               Premium catering and pakwan center dedicated to bringing authentic taste and elegance to your memorable celebrations in Karachi.
             </p>
             <div className="flex items-center gap-4">
-              <a href="#" className="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center text-white/70 hover:text-primary hover:border-primary transition-colors">
+              <a href="https://www.facebook.com/share/18TeVSMaA7/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center text-white/70 hover:text-primary hover:border-primary transition-colors">
                 <Facebook size={18} />
               </a>
-              <a href="#" className="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center text-white/70 hover:text-primary hover:border-primary transition-colors">
+              <a href="https://www.instagram.com/shahdiyanacateringservices?igsh=ODd5Z3B3aDhkeDVr" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center text-white/70 hover:text-primary hover:border-primary transition-colors">
                 <Instagram size={18} />
               </a>
-              <a href="#" className="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center text-white/70 hover:text-primary hover:border-primary transition-colors">
+              <a href="http://tiktok.com/@shahdiyana_c1" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center text-white/70 hover:text-primary hover:border-primary transition-colors">
                 <SiTiktok size={18} />
               </a>
             </div>
@@ -37,7 +38,7 @@ export function Footer() {
               <li><a href="#home" className="text-white/60 hover:text-primary transition-colors">Home</a></li>
               <li><a href="#about" className="text-white/60 hover:text-primary transition-colors">About Us</a></li>
               <li><a href="#menu" className="text-white/60 hover:text-primary transition-colors">Menu</a></li>
-              <li><a href="#booking" className="text-white/60 hover:text-primary transition-colors">Reservations</a></li>
+              <li><a href="#booking" className="text-white/60 hover:text-primary transition-colors">Booking</a></li>
             </ul>
           </div>
 
@@ -71,7 +72,7 @@ export function Footer() {
             &copy; {new Date().getFullYear()} Shah Diyana Catering. All rights reserved.
           </p>
           <p className="text-white/40 text-sm text-center md:text-right">
-            Managed by <span className="text-white/80">Mr. Shahbaz Alamgir</span>
+            Owner <span className="text-white/80">Mr. Shahbaz Alamgir</span>
           </p>
         </div>
       </div>

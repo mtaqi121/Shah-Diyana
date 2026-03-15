@@ -4,30 +4,75 @@ const MENU_DATA = [
   {
     category: "Starters",
     items: [
-      { name: "Hot & Sour Soup", desc: "Classic rich broth with chicken and vegetables", price: "Rs 450" },
-      { name: "Crispy Spring Rolls", desc: "Hand-rolled with vegetables and served with sweet chili", price: "Rs 380" },
-      { name: "Chicken Tikka Skewers", desc: "Charcoal-grilled tender chicken marinated in spices", price: "Rs 650" },
-      { name: "Dynamite Prawns", desc: "Crispy fried prawns tossed in spicy mayo", price: "Rs 850" },
-    ]
+      { name: "Chicken Wonton", desc: "Crispy fried wontons filled with flavored chicken" },
+      { name: "Mint Rolls", desc: "Fresh mint rolls served with a tangy dip" },
+      { name: "Fresh Juice", desc: "Refreshing freshly squeezed juices" },
+      { name: "Chicken Spring Rolls", desc: "Crispy rolls filled with seasoned chicken and veggies" },
+      { name: "Arabian Cheese Puff", desc: "Savory puff pastries filled with cheese" },
+      { name: "Mini Sandwich", desc: "Assorted mini sandwiches with fresh fillings" },
+      { name: "Chicken Mini Samosa", desc: "Crispy mini samosas stuffed with spiced chicken" },
+      { name: "Vegetable Samosa", desc: "Classic vegetable samosas with crispy crust" },
+      { name: "Chicken Wings", desc: "Spicy and tangy chicken wings" },
+      { name: "Chicken Nuggets", desc: "Crispy chicken bites with a crunchy coating" },
+      { name: "Prawn Tempura", desc: "Crispy tempura prawns with dipping sauce" },
+      { name: "Cheese Balls", desc: "Golden cheese balls with a gooey center" },
+      { name: "French Fries", desc: "Crispy golden fries seasoned to perfection" },
+      { name: "Dynamite Chicken", desc: "Spicy dynamite chicken tossed in a creamy sauce" },
+      { name: "Prawn Dynamite", desc: "Crispy prawns tossed in dynamite sauce" },
+      { name: "Mini Pizza", desc: "Mini pizzas loaded with cheese and toppings" },
+      { name: "Chicken Patties", desc: "Savory chicken patties with flaky pastry" },
+      { name: "Chicken Popcorn", desc: "Bite-sized popcorn chicken with crispy coating" },
+      { name: "Drumsticks", desc: "Juicy drumsticks marinated in aromatic spices" },
+    ],
   },
   {
     category: "Main Course",
     items: [
-      { name: "Shah Special Biryani", desc: "Aromatic basmati rice cooked with tender meat and saffron", price: "Rs 800" },
-      { name: "Mutton Qorma", desc: "Rich, slow-cooked meat stew with traditional spices", price: "Rs 1200" },
-      { name: "Chicken Karahi", desc: "Wok-cooked chicken with tomatoes, green chilies and ginger", price: "Rs 950" },
-      { name: "Palak Paneer", desc: "Creamy spinach cooked with fresh cottage cheese", price: "Rs 600" },
-    ]
+      { name: "Chicken Biryani", desc: "Fragrant basmati rice layered with spiced chicken" },
+      { name: "Mutton Biryani", desc: "Rich aromatic rice cooked with tender mutton" },
+      { name: "Beef Biryani", desc: "Spiced beef biryani with fragrant whole spices" },
+      { name: "Sindhi Biryani", desc: "Spicy Sindhi-style biryani with a tangy kick" },
+      { name: "Hyderabadi Biryani", desc: "Hyderabadi biryani with saffron and rose water" },
+      { name: "Chicken Karahi", desc: "Wok-style chicken curry cooked with tomatoes and green chilies" },
+      { name: "Mutton Karahi", desc: "Slow-cooked mutton karahi with rich masala" },
+      { name: "Beef Karahi", desc: "Beef chunks in a spicy karahi gravy" },
+      { name: "White Karahi", desc: "Creamy white karahi with mild spices" },
+      { name: "Peshawari Karahi", desc: "Peshawari-style karahi with aromatic spices" },
+      { name: "Chicken Qorma", desc: "Creamy chicken qorma with aromatic spices" },
+      { name: "Mutton Qorma", desc: "Rich mutton qorma cooked in nutty gravy" },
+      { name: "Beef Qorma", desc: "Slow-cooked beef qorma with a creamy sauce" },
+      { name: "Shahi Qorma", desc: "Royal qorma with a rich, fragrant sauce" },
+      { name: "Chicken Handi", desc: "Creamy chicken handi slow-cooked in a clay pot" },
+      { name: "Chicken Malai Handi", desc: "Creamy malai handi with soft chicken pieces" },
+      { name: "Chicken Achari Handi", desc: "Tangy achari handi with pickling spices" },
+      { name: "Mutton Handi", desc: "Rich mutton handi cooked to perfection" },
+      { name: "Chicken Tikka", desc: "Charcoal-grilled chicken chunks marinated in spices" },
+    ],
   },
   {
     category: "Desserts",
     items: [
-      { name: "Shahi Kheer", desc: "Traditional rice pudding garnished with almonds and pistachios", price: "Rs 300" },
-      { name: "Gulab Jamun", desc: "Warm milk dumplings soaked in rose-scented syrup", price: "Rs 250" },
-      { name: "Gajar Ka Halwa", desc: "Rich carrot dessert slow-cooked in milk and ghee", price: "Rs 350" },
-      { name: "Ras Malai", desc: "Soft cottage cheese patties in thickened sweetened milk", price: "Rs 400" },
-    ]
-  }
+      { name: "Cream Cocktail", desc: "Rich creamy dessert with assorted nuts and flavors" },
+      { name: "Doodh Dulari", desc: "Sweet milk pudding with condensed milk and nuts" },
+      { name: "Rabri Kheer", desc: "Creamy rice pudding topped with rabri and nuts" },
+      { name: "Arabian Delight", desc: "Exotic Arabian-style dessert with aromatic spices" },
+      { name: "Mango Delight", desc: "Sweet mango dessert with creamy texture" },
+      { name: "Pineapple Delight", desc: "Fruity pineapple dessert with tropical flavor" },
+      { name: "Anjeer Delight", desc: "Nutty fig dessert with rich cream" },
+      { name: "Vanilla Delight", desc: "Classic vanilla dessert with creamy goodness" },
+      { name: "Gulab Jamun", desc: "Soft milk dumplings soaked in sweet syrup" },
+      { name: "Ras Malai", desc: "Creamy cottage cheese discs in sweet milk" },
+      { name: "Kheer", desc: "Rice pudding flavored with cardamom and nuts" },
+      { name: "Zarda", desc: "Sweet saffron rice with nuts and raisins" },
+      { name: "Shahi Tukda", desc: "Royal bread pudding soaked in saffron syrup" },
+      { name: "Kunafa", desc: "Sweet cheese pastry soaked in sugar syrup" },
+      { name: "Gajar ka Halwa (in seasons only)", desc: "Rich carrot pudding cooked in milk and ghee" },
+      { name: "Suji ka Halwa", desc: "Semolina sweet pudding with ghee and nuts" },
+      { name: "Dessert Bar with Fountain", desc: "Interactive dessert station with chocolate fountain" },
+      { name: "Litred Ice Cream", desc: "Large servings of assorted ice cream flavors" },
+      { name: "Kulfa", desc: "Traditional milk-based frozen dessert" },
+    ],
+  },
 ];
 
 export function Menu() {
@@ -71,16 +116,17 @@ export function Menu() {
                 {section.category}
               </h3>
               <ul className="space-y-8">
-                {section.items.map((item) => (
+                {section.items.map((item, itemIndex) => (
                   <li key={item.name} className="group cursor-pointer">
                     <div className="flex items-end justify-between mb-1">
                       <h4 className="text-white font-medium font-display tracking-wide group-hover:text-primary transition-colors">
                         {item.name}
                       </h4>
-                      <div className="flex-grow mx-4 border-b border-dotted border-white/20 mb-1 opacity-50"></div>
-                      <span className="text-primary font-semibold shrink-0">{item.price}</span>
+                      {itemIndex !== section.items.length - 1 && (
+                        <div className="flex-grow mx-4 border-b border-dotted border-white/20 mb-1 opacity-50"></div>
+                      )}
                     </div>
-                    <p className="text-sm text-white/50 font-light pr-12">{item.desc}</p>
+                    <p className="text-sm text-white/50 font-light pr-0 md:pr-12">{item.desc}</p>
                   </li>
                 ))}
               </ul>
@@ -96,7 +142,12 @@ export function Menu() {
         >
           <h4 className="font-display text-2xl text-white mb-2">Planning a Large Event?</h4>
           <p className="text-white/70 mb-4">We offer customized catering packages tailored to your specific needs and guest counts.</p>
-          <a href="#contact" className="inline-block text-primary font-semibold uppercase tracking-wider hover:text-white transition-colors border-b border-primary hover:border-white pb-1">
+          <a
+            href="https://wa.me/923043635628"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block text-primary font-semibold uppercase tracking-wider hover:text-white transition-colors border-b border-primary hover:border-white pb-1"
+          >
             Request a Quote
           </a>
         </motion.div>

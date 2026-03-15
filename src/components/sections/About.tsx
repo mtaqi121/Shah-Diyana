@@ -25,10 +25,30 @@ export function About() {
             </h2>
             <div className="space-y-4 text-white/60 font-light leading-relaxed">
               <p>
-                At Shah Diyana, we believe that food is not just a meal, but an experience that brings people together. Established in the heart of Karachi, our catering and pakwan center is dedicated to making your celebrations truly unforgettable.
+                SHAH – DIYANA CATERING SERVICES & PAKWAN CENTER<br />
+                FARMOUSE PACKAGES
               </p>
+              <p>“Where Taste Meets Beautiful Celebrations ✨🍴🎉”</p>
               <p>
-                Whether it's an intimate gathering, a grand wedding, or a corporate event, our master chefs meticulously craft traditional and contemporary dishes using the finest, freshest ingredients.
+                SHAH – DIYANA CATERING SERVICES & Pakwan Center provides delicious, fresh, and hygienic food for all types of events and daily orders. We are committed to quality taste, beautiful presentation, and professional service to make every occasion special.
+              </p>
+              <p>Our Services:</p>
+              <div className="space-y-1">
+                <p>➤ Wedding Events</p>
+                <p>➤ Valima Functions</p>
+                <p>➤ Mehndi & Mayo</p>
+                <p>➤ Farmhouse Events</p>
+                <p>➤ Corporate Events</p>
+                <p>➤ Private Parties & Family Functions</p>
+                <p>➤ Birthday & Anniversary Celebrations</p>
+                <p>➤ Aqeeqa & Religious Events</p>
+                <p>➤ School & College Events</p>
+                <p>➤ Buffet, Live BBQ & Outdoor Catering</p>
+                <p>➤ Hi-Tea & Dinner Arrangements</p>
+                <p>➤ Pakwan Orders for Home & Events</p>
+              </div>
+              <p>
+                We offer customized menus according to your taste and budget with guaranteed quality and timely service.
               </p>
             </div>
 
@@ -55,13 +75,19 @@ export function About() {
           </motion.div>
 
           {/* Location Card */}
-          <motion.div
-            initial={{ opacity: 0, x: 50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true, margin: "-100px" }}
-            transition={{ duration: 0.8 }}
-            className="relative h-[600px] rounded-xl overflow-hidden group shadow-2xl shadow-black"
+          <a
+            href="https://maps.app.goo.gl/EdrZwHoJ548CNAtw5"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block"
           >
+            <motion.div
+              initial={{ opacity: 0, x: 50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true, margin: "-100px" }}
+              transition={{ duration: 0.8 }}
+              className="relative h-[600px] rounded-xl overflow-hidden group shadow-2xl shadow-black"
+            >
             {/* beautiful restaurant interior aesthetic lighting */}
             <img
               src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=2070&auto=format&fit=crop"
@@ -78,8 +104,7 @@ export function About() {
               <p className="text-white/80 mb-2">Shop No 06, Gulshan-e-Shamim</p>
               <p className="text-white/60 text-sm">Yaseenabad, FB Area, Karachi</p>
             </div>
-          </motion.div>
-
+          </motion.div>          </a>
         </div>
       </div>
     </section>

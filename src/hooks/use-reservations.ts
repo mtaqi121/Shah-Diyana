@@ -29,8 +29,8 @@ export function useCreateReservation() {
     },
     onSuccess: () => {
       toast({
-        title: "Reservation Confirmed",
-        description: "We look forward to hosting your beautiful celebration!",
+        title: "Booking Confirmed",
+        description: "We look forward to catering your beautiful celebration!",
         duration: 5000,
       });
     },

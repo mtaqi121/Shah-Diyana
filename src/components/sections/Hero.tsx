@@ -23,12 +23,12 @@ export function Hero() {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="flex flex-col items-center"
         >
+          <h1 className="hero-responsive-title font-display text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-6 leading-tight">
+            SHAH <span className="gold-gradient-text">-</span> DIYANA
+          </h1>
           <span className="text-primary tracking-[0.3em] uppercase text-sm font-semibold mb-4 block">
             Catering and Pakwan Center
           </span>
-          <h1 className="font-display text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-6 leading-tight">
-            SHAH <span className="gold-gradient-text">-</span> DIYANA
-          </h1>
           <p className="text-lg md:text-2xl text-white/80 font-light mb-10 max-w-2xl font-display italic">
             "Where Taste Meets Beautiful Celebrations!"
           </p>
