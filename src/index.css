@@ -46,6 +46,13 @@
   html {
     color-scheme: dark;
     scroll-behavior: smooth;
+    /* Ensure anchor navigation scrolls past the fixed navbar on mobile */
+    scroll-padding-top: 5rem;
+  }
+
+  /* Helps anchor links land below the fixed navbar across browsers */
+  section {
+    scroll-margin-top: 5rem;
   }
 
   body {

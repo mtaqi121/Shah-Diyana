@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback, type MouseEvent } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -13,6 +13,29 @@ const NAV_LINKS = [
 export function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  const scrollToSection = useCallback((href: string) => {
+    const id = href.replace("#", "");
+    const element = document.getElementById(id);
+    if (!element) return;
+
+    // Adjust for fixed header height (approx. 72-80px depending on scroll state)
+    const headerOffset = 80;
+    const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
+    const offsetPosition = elementPosition - headerOffset;
+
+    window.scrollTo({ top: offsetPosition, behavior: "smooth" });
+  }, []);
+
+  const handleNavLinkClick = (href: string) => (event: MouseEvent<HTMLAnchorElement>) => {
+    event.preventDefault();
+    setMobileMenuOpen(false);
+
+    // Allow the menu to close before scrolling to prevent layout-shift issues
+    setTimeout(() => {
+      scrollToSection(href);
+    }, 120);
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -81,7 +104,7 @@ export function Navbar() {
                 <a
                   key={link.label}
                   href={link.href}
-                  onClick={() => setMobileMenuOpen(false)}
+                  onClick={handleNavLinkClick(link.href)}
                   className="text-lg font-display text-white/80 hover:text-primary transition-colors duration-200"
                 >
                   {link.label}
