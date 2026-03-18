@@ -25,8 +25,7 @@ export function About() {
             </h2>
             <div className="space-y-4 text-white/60 font-light leading-relaxed">
               <p>
-                SHAH – DIYANA CATERING SERVICES & PAKWAN CENTER<br />
-                FARMOUSE PACKAGES
+                SHAH – DIYANA CATERING SERVICES & PAKWAN CENTER
               </p>
               <p>“Where Taste Meets Beautiful Celebrations ✨🍴🎉”</p>
               <p>

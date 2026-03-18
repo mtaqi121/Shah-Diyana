@@ -17,6 +17,14 @@ import { Textarea } from "@/components/ui/textarea";
 
 // Extend schema for frontend
 const formSchema = insertReservationSchema.extend({
+  name: z.string().min(3, "Name is required and must be at least 3 characters"),
+  email: z.string().email("Enter a valid email"),
+  phone: z
+    .string()
+    .regex(/^\d{10,11}$/, "Phone number is invalid"),
+  location: z.string().min(1, "Location is required"),
+  date: z.string().min(1, "Date is required"),
+  time: z.string().min(1, "Time is required"),
   seats: z.coerce
     .number()
     .min(1, "Must be at least 1 person")
@@ -32,7 +40,8 @@ export function Booking() {
       name: "",
       email: "",
       phone: "",
-      seats: 2,
+      location: "",
+      seats: 200,
       date: "",
       time: "",
       specialRequest: "",
@@ -147,6 +156,26 @@ export function Booking() {
                           <FormControl>
                             <Input
                               placeholder="0300 1234567"
+                              {...field}
+                              className="bg-background/50 border-white/10 text-white"
+                            />
+                          </FormControl>
+                          <FormMessage />
+                        </FormItem>
+                      )}
+                    />
+
+                    <FormField
+                      control={form.control}
+                      name="location"
+                      render={({ field }) => (
+                        <FormItem className="md:col-span-2">
+                          <FormLabel className="text-white text-xs">
+                            Location
+                          </FormLabel>
+                          <FormControl>
+                            <Input
+                              placeholder="Enter your location (e.g., Gulshan-e-Iqbal)"
                               {...field}
                               className="bg-background/50 border-white/10 text-white"
                             />
