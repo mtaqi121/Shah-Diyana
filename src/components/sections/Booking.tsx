@@ -49,6 +49,8 @@ export function Booking() {
   });
 
   function onSubmit(data: FormValues) {
+    const location = (form as any).location?.value ?? data.location;
+
     const phoneNumber = "923043635628";
 
     const message = encodeURIComponent(
@@ -56,6 +58,7 @@ export function Booking() {
         `👤 Name: ${data.name}\n` +
         `📧 Email: ${data.email}\n` +
         `📞 Phone: ${data.phone}\n` +
+        `Location: ${location}\n` +
         `👥 Persons: ${data.seats}\n` +
         `📅 Date: ${data.date}\n` +
         `⏰ Time: ${data.time}\n` +
@@ -288,6 +291,7 @@ export function Booking() {
                             placeholder="Any dietary requirements or special occasion?"
                             className="bg-background/50 border-white/10 text-white h-24"
                             {...field}
+                            value={field.value ?? ""}
                           />
                         </FormControl>
                         <FormMessage />
