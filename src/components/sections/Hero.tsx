@@ -5,12 +5,12 @@ import { Button } from "@/components/ui/button";
 export function Hero() {
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
-      {/* Premium dark high-end catering background */}
+      {/* Premium Catering Services in Karachi */}
       <div className="absolute inset-0 z-0">
         {/* landing page hero elegant catering food presentation */}
         <img
           src="https://images.unsplash.com/photo-1555244162-803834f70033?q=80&w=2070&auto=format&fit=crop"
-          alt="Catering Background"
+          alt="Premium Catering Services in Karachi"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-background"></div>
